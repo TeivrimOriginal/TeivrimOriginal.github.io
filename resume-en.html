@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Danila Arinov — Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<style>
+  :root{--tx:#161a22;--dim:#5a6472;--line:#dfe3ea;--acc:#1f5fd0;--r:8px}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font:400 14px/1.55 Inter,system-ui,sans-serif;color:var(--tx);background:#eef0f4;padding:28px 14px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{max-width:790px;margin:0 auto;background:#fff;padding:42px 46px;box-shadow:0 6px 34px rgba(20,30,50,.12)}
+  .mono{font-family:"JetBrains Mono",monospace}
+  h1{font-size:25px;font-weight:700;letter-spacing:-.02em}
+  .role{color:var(--acc);font-weight:600;font-size:14px;margin:2px 0 12px}
+  .meta{color:var(--dim);font-size:12.5px;margin-bottom:20px}
+  .meta a{color:var(--acc);text-decoration:none}
+  .meta a:hover{text-decoration:underline}
+  .sec{margin-top:22px}
+  .sec h2{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.11em;color:var(--dim);border-bottom:1.5px solid var(--line);padding-bottom:5px;margin-bottom:11px}
+  .skills{display:flex;flex-wrap:wrap;gap:6px}
+  .sk{font-size:12px;padding:4px 10px;border:1px solid var(--line);border-radius:20px;background:#f7f9fc}
+  .it{margin-bottom:13px}
+  .it-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+  .it-t{font-weight:600;font-size:14px}
+  .it-d{font-size:12px;color:var(--dim);white-space:nowrap}
+  .it a{color:var(--acc);text-decoration:none;font-size:11.5px;word-break:break-all}
+  .it p{font-size:13px;color:#333a45;margin-top:2px}
+  .ed{font-size:13px}
+  .ed b{font-weight:600}
+  .ed span{color:var(--dim)}
+  .note{font-size:12.5px;color:var(--dim)}
+  .print{display:block;max-width:790px;margin:16px auto 0;text-align:center}
+  .print button{font:inherit;font-size:13px;padding:9px 18px;border:1px solid var(--line);background:#fff;border-radius:var(--r);cursor:pointer}
+  .print button:hover{border-color:var(--acc);color:var(--acc)}
+  .back{display:block;max-width:790px;margin:12px auto 0;text-align:center;font-size:12.5px;color:var(--dim);text-decoration:none}
+  .back:hover{color:var(--acc)}
+  @media print{
+    body{background:#fff;padding:0}
+    .sheet{box-shadow:none;padding:0;max-width:none}
+    .print,.back{display:none}
+    .it{page-break-inside:avoid}
+  }
+  @media(max-width:640px){.sheet{padding:26px 22px}}
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <header>
+    <h1>Danila Arinov</h1>
+    <p class="role">Software Developer — C++ / Rust / Python</p>
+    <p class="meta">
+      <a href="mailto:teivrim@gmail.com">teivrim@gmail.com</a> ·
+      <a href="https://t.me/Smishnyavko" target="_blank" rel="noopener">Telegram @Smishnyavko</a> ·
+      <a href="https://www.linkedin.com/in/danila-arinov-617680439" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://kwork.ru/user/teivrim" target="_blank" rel="noopener">Kwork</a> ·
+      <a href="https://github.com/TeivrimOriginal" target="_blank" rel="noopener">github.com/TeivrimOriginal</a> ·
+      Russia
+    </p>
+  </header>
+
+  <section class="sec">
+    <h2>Profile</h2>
+    <p class="note">
+      Student at Ural College of Technologies, NRNU MEPhI — Information Networks and Programming (vocational qualification), 2024–2027.
+      Working in systems and graphics programming: C++, Rust, Python, Vulkan, OpenGL, Win32.
+      Interested in low-level graphics, high-performance systems and applied Rust.
+    </p>
+  </section>
+
+  <section class="sec">
+    <h2>Technologies</h2>
+    <div class="skills">
+      <span class="sk">Rust</span>
+      <span class="sk">C++</span>
+      <span class="sk">Python</span>
+      <span class="sk">Vulkan</span>
+      <span class="sk">OpenGL</span>
+      <span class="sk">Win32 / GDI</span>
+      <span class="sk">CMake</span>
+      <span class="sk">Git</span>
+      <span class="sk">Qt 6</span>
+      <span class="sk">Blender</span>
+      <span class="sk">Drawing / 3D</span>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>Projects</h2>
+
+    <div class="it">
+      <div class="it-h">
+        <span class="it-t">TPaint — Raster Graphics Editor</span>
+        <span class="it-d mono">Rust · Win32/GDI · MIT</span>
+      </div>
+      <p>A working raster graphics editor (SAI Paint analogue) written in pure Rust with no C/C++. Tools: brush with adjustable thickness, pencil, line, ellipse, airbrush, fill. Supports undo/redo, zoom and pan, opening and saving PNG. UI drawn directly through the Win32 API and GDI.</p>
+      <a href="https://github.com/TeivrimOriginal/Copy-SAI-Paint-with-Rust" target="_blank" rel="noopener">github.com/TeivrimOriginal/Copy-SAI-Paint-with-Rust</a>
+    </div>
+
+    <div class="it">
+      <div class="it-h">
+        <span class="it-t">Teivrim-Engine</span>
+        <span class="it-d mono">C++ · Vulkan / OpenGL · CMake</span>
+      </div>
+      <p>Cross-platform game engine: modular architecture, Vulkan and OpenGL rendering, CMake build system. 87 commits during its development. Work in progress, roughly 10–15% complete.</p>
+      <a href="https://github.com/TeivrimOriginal/Teivrim-Engine" target="_blank" rel="noopener">github.com/TeivrimOriginal/Teivrim-Engine</a>
+    </div>
+
+    <div class="it">
+      <div class="it-h">
+        <span class="it-t">Visual Novel Editor</span>
+        <span class="it-d mono">C++ · Win32 / GDI+ / MinGW</span>
+      </div>
+      <p>Timeline, scene hierarchy, inspector, script panel and asset browser — a tool for building visual novels.</p>
+      <a href="https://github.com/TeivrimOriginal/teivrim-novell-engine" target="_blank" rel="noopener">github.com/TeivrimOriginal/teivrim-novell-engine</a>
+    </div>
+
+    <div class="it">
+      <div class="it-h">
+        <span class="it-t">TeivrimSite</span>
+        <span class="it-d mono">Rust</span>
+      </div>
+      <p>Aggregator for anime, manga and light novels: consuming public APIs, processing and structuring data, hands-on Rust practice.</p>
+      <a href="https://github.com/TeivrimOriginal/TeivrimSite" target="_blank" rel="noopener">github.com/TeivrimOriginal/TeivrimSite</a>
+    </div>
+
+    <div class="it">
+      <div class="it-h">
+        <span class="it-t">English Learning Website</span>
+        <span class="it-d mono">Web · in development</span>
+      </div>
+      <p>A platform for original study material and exercises for practising English.</p>
+      <a href="https://github.com/TeivrimOriginal/Cautious-Enigma" target="_blank" rel="noopener">github.com/TeivrimOriginal/Cautious-Enigma</a>
+    </div>
+
+  </section>
+
+  <section class="sec">
+    <h2>Education</h2>
+    <p class="ed">
+      <b>Ural College of Technologies, NRNU MEPhI</b><br />
+      <span>Information Networks and Programming, vocational qualification · 2024–2027</span>
+    </p>
+  </section>
+
+  <section class="sec">
+    <h2>Additional</h2>
+    <p class="note">
+      3D modelling in Blender, drawing. English - A2.
+      Main engine project under development since March 2026.
+    </p>
+  </section>
+
+</div>
+
+<div class="print"><button onclick="window.print()">Save as PDF / Print</button></div>
+<a class="back" href="index-en.html">← Back to site</a>
+<a class="back" href="resume.html">Русская версия</a>
+
+</body>
+</html>
